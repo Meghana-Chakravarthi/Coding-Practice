@@ -1,0 +1,9 @@
+w=input("Enter the Word:")
+if len(w)>10:
+    print(w[0]+str(len(w)-2)+w[len(w)-1])
+else:
+    print("NOT POSSIBLE")
+
+Output:
+Enter the Word:laxmimeghana
+l10a
