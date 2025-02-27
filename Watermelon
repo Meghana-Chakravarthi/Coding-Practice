@@ -3,3 +3,7 @@ if w%2==0:
     print("YES")
 else:
     print("NO")
+
+OUTPUT:
+Enter Weight of Watermelon:6
+YES
