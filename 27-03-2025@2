@@ -1,0 +1,10 @@
+# Who got more points
+a=int(input())
+b=int(input())
+c=int(input())
+if a>b and a>c:
+    print("Harry got the most points!")
+elif b>c:
+    print("Ron got the most points!")
+else:
+    print("Hermione got the most points!")
