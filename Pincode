@@ -1,0 +1,17 @@
+import re
+
+def extract_pin_code(address):
+    # Define a pattern for a valid Indian PIN code
+    pattern = r'\b[1-9]\d{5}\b|\b[1-9]\d{2} \d{3}\b'
+    
+    # Find the first match
+    match = re.search(pattern, address)
+    
+    if match:
+        return match.group().replace(" ", "")  # Remove space if present
+    else:
+        return "-1"
+
+# Example input
+address = input("Enter Address:")
+print(extract_pin_code(address))
